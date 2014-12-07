@@ -1,17 +1,18 @@
 <?php
 
-class PaymentResponseController extends \BaseController {
+	class PaymentResponseController extends \BaseController {
 
-	public function index()
-	{
-		return gethostname();
+		public function index()
+		{
+			return gethostname();
+		}
+
+		public function handle()
+		{
+			Log::info( json_encode( Input::all() ) );
+
+			return Input::all();
+		}
+
+
 	}
-
-	public function handle()
-	{
-//		return 1;
-		return Input::all();
-	}
-
-
-}
