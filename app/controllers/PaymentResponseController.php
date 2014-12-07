@@ -12,7 +12,7 @@
 			PaymentResponse::create([
 				
 				'data' => serialize(Input::all()),
-				'entry_id' => Input::get(''),
+				'entry_id' => Input::get('entry_id'),
 				
 			]);
 
