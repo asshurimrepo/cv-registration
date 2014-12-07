@@ -4,7 +4,7 @@ class PaymentResponseController extends \BaseController {
 
 	public function index()
 	{
-		return View::make('hello');
+		return gethostname();
 	}
 
 	public function handle()
