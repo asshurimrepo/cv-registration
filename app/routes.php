@@ -16,7 +16,7 @@
 	 * @name payment.response
 	 * @uses PaymentResponseController@handle
 	 * */
-	Route::get( 'payment', [
+	Route::post( 'payment', [
 		'as'   => 'payment.response',
 		'uses' => 'PaymentResponseController@handle'
 	] );
