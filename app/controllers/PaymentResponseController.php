@@ -9,8 +9,8 @@ class PaymentResponseController extends \BaseController {
 
 	public function handle()
 	{
-		return 1;
-//		return Input::all();
+//		return 1;
+		return Input::all();
 	}
 
 
