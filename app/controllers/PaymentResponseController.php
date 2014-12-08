@@ -4,17 +4,19 @@
 
 		public function index()
 		{
-			return gethostname();
+			dd( WP_Options::fetch() );
+
+			return;
 		}
 
 		public function handle()
 		{
-			PaymentResponse::create([
-				
-				'data' => serialize(Input::all()),
-				'entry_id' => Input::get('entry_id', 0),
-				
-			]);
+			PaymentResponse::create( [
+
+				'data'     => serialize( Input::all() ),
+				'entry_id' => Input::get( 'entry_id', 0 ),
+
+			] );
 
 			return;
 		}

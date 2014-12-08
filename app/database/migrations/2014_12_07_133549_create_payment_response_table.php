@@ -16,6 +16,7 @@ class CreatePaymentResponseTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('entry_id');
+			$table->integer('invoice_id');
 			$table->text('data');
 			$table->timestamps();
 		});
