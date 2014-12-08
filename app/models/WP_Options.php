@@ -10,6 +10,7 @@
 		 */
 		public static function fetch()
 		{
+
 			return (new static)->fetchDataOptions();
 		}
 
