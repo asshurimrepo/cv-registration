@@ -4,7 +4,7 @@
 
 		public function index()
 		{
-			dd( WPOptions::fetch()->site_url );
+			dd( WPOptions::fetch()->siteurl );
 
 			return;
 		}
