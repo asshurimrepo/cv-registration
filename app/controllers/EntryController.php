@@ -16,7 +16,7 @@
 //			dd($online_entries->toArray());
 //			$free_entries = LeadDetails::where( 'value', '2checkout' )->join('wp_rg_lead_detail')->get();
 
-			$free_entries = LeadDetails::where('value', 'Free')->get();
+			$free_entries = LeadDetails::where('value', 'like', 'Free%')->get();
 			$free_entries->load('lead_details');
 
 			$bank_entries = LeadDetails::where('value', 'Bank Account')->get();
