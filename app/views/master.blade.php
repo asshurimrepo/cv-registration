@@ -9,7 +9,10 @@
 
     <style>
         body{
-            font-size: 12px !important;
+            padding-top: 10px;
+        }
+        body, table{
+            font-size: 14px !important;
         }
     </style>
 
@@ -23,6 +26,7 @@
 
 
 {{ HTML::script('jquery/jquery.min.js') }}
+{{ HTML::script('bootstrap/js/bootstrap.min.js') }}
 
 @yield('foot')
 

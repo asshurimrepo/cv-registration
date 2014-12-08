@@ -28,4 +28,9 @@
 			return array_values($field_meta);
 		}
 
+		public function lead_details()
+		{
+			return $this->hasMany('LeadDetails', 'lead_id', 'lead_id');
+		}
+
 	}
