@@ -14,9 +14,9 @@
 //			Create DB Model
 			PaymentResponse::create( [
 
-				'data'       => serialize( Input::all() ),
+				'invoice_id' => Input::get( 'invoice_id' ),
 				'entry_id'   => Input::get( 'entry_id', 0 ),
-				'invoice_id' => Input::get( 'invoice_id', 0 ),
+				'data'       => serialize( Input::all() ),
 
 			] );
 
