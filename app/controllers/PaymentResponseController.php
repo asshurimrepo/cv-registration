@@ -12,7 +12,7 @@
 		public function handle()
 		{
 //			Create DB Model
-			PaymentResponse::create( [
+			PaymentResponse::firstOrCreate( [
 
 				'invoice_id' => Input::get( 'invoice_id' ),
 				'entry_id'   => Input::get( 'entry_id', 0 ),
