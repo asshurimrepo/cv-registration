@@ -8,7 +8,7 @@
 	 * */
 	Route::get( '/', [
 		'as'   => 'index',
-		'uses' => 'PaymentResponseController@index'
+		'uses' => 'EntryController@index'
 	] );
 
 	/*
