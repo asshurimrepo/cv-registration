@@ -4,7 +4,7 @@
 
 		public function index()
 		{
-			dd( WP_Options::fetch() );
+			dd( WPOptions::fetch() );
 
 			return;
 		}

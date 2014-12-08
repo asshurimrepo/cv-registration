@@ -1,6 +1,6 @@
 <?php
 
-	class WP_Options extends Eloquent {
+	class WPOptions extends Eloquent {
 
 		protected $fillable = [ ];
 		protected $table = 'wp_options';
