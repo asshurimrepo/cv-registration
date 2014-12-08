@@ -30,7 +30,7 @@
 
 		public function lead_details()
 		{
-			return $this->hasMany('LeadDetails', 'lead_id', 'lead_id');
+			return $this->hasMany('LeadDetails', 'lead_id', 'lead_id')->orderBy('field_number', 'asc');
 		}
 
 	}
