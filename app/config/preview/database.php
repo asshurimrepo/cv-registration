@@ -22,10 +22,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'bords_wrdp5',
-			'username'  => 'bords',
-			'password'  => 'prev13w@Dm1n!123',
+			'host'      => '205.178.146.102',
+			'database'  => 'alfareedajobsgirish',
+			'username'  => 'alfareedajobs',
+			'password'  => 'Password01',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
