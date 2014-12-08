@@ -11,7 +11,7 @@
     @foreach($bank_entries as $entry)
         <tr>
 
-            @foreach($bank_entries[0]->lead_details as $detail)
+            @foreach($entry->lead_details as $detail)
 
 
                 @if(strpos($detail->field_name, 'CV'))

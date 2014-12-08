@@ -13,7 +13,7 @@
         <tr>
             <td><b>{{ $entry->info['invoice_id'] }}</b></td>
 
-            @foreach($online_entries[0]->lead_details as $detail)
+            @foreach($entry->lead_details as $detail)
 
 
                 @if(strpos($detail->field_name, 'CV'))

@@ -11,13 +11,13 @@
     @foreach($free_entries as $entry)
         <tr>
 
-            @foreach($free_entries[0]->lead_details as $detail)
+            @foreach($entry->lead_details as $detail)
 
 
                 @if(strpos($detail->field_name, 'CV'))
-                    <td><a href="{{ $detail->value }}" target="_blank" class="btn btn-info">Download CV</a></td>
+                      <td><a href="{{ $detail->value }}" target="_blank" class="btn btn-info">Download CV</a></td>
                 @else
-                    <td>{{ $detail->value }}</td>
+                    <td>{{ $detail->value }} </td>
                 @endif
 
             @endforeach
