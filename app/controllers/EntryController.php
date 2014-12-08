@@ -19,7 +19,7 @@
 			$free_entries = LeadDetails::where('value', 'like', 'Free%')->get();
 			$free_entries->load('lead_details');
 
-			$bank_entries = LeadDetails::where('value', 'Bank Account')->where('value', '!=', 'Free')->get();
+			$bank_entries = LeadDetails::where('value', 'Bank Account')->get();
 			$bank_entries->load('lead_details');
 
 
