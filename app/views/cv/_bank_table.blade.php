@@ -1,6 +1,7 @@
 <table class="table table-hover table-striped datatable">
     <thead>
     <tr>
+        <th></th>
         @foreach($bank_entries[0]->lead_details as $detail)
             <th>{{ $detail->field_name }}</th>
         @endforeach
@@ -10,6 +11,8 @@
     <tbody>
     @foreach($bank_entries as $entry)
         <tr>
+
+            <th><a target="_parent" href="{{ WPOptions::fetch()->siteurl."/wp-admin/admin.php?page=gf_entries&view=entry&id={$entry->form_id}&lid={$entry->lead_id}&filter=&paged=1&pos=0" }}" title="View Entry"><i class="fa fa-eye"></i></a></th>
 
             @foreach($entry->lead_details as $detail)
 

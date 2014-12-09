@@ -19,7 +19,7 @@
 		 */
 		public function fetchDataOptions()
 		{
-			foreach ( $this->all() as $data )
+			foreach ( $this->remember(30)->get() as $data )
 			{
 				$this->{$data->option_name} = $data->option_value;
 			}
