@@ -14,6 +14,9 @@
         body, table{
             font-size: 14px !important;
         }
+        .tab-pane{
+            min-height: 300px;
+        }
     </style>
 
 </head>
