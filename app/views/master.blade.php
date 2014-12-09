@@ -4,6 +4,9 @@
     <title>Alfareeda Jobs CV Tracker</title>
 
     {{ HTML::style('bootstrap/css/bootstrap.min.css') }}
+    {{ HTML::style('//cdn.datatables.net/1.10.4/css/jquery.dataTables.css') }}
+    {{ HTML::style('https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.css') }}
+
 
     @yield('head')
 
@@ -30,6 +33,17 @@
 
 {{ HTML::script('jquery/jquery.min.js') }}
 {{ HTML::script('bootstrap/js/bootstrap.min.js') }}
+{{ HTML::script('//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js') }}
+
+<script>
+
+    (function(){
+
+        $('.datatable').DataTable();
+
+    })();
+
+</script>
 
 @yield('foot')
 

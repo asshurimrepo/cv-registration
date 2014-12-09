@@ -1,6 +1,6 @@
 @if($online_entries->count())
 
-    <table class="table table-hover table-striped">
+    <table class="table table-hover table-striped datatable">
         <thead>
         <tr>
             <th>Invoice #</th>

@@ -20,6 +20,8 @@
         <!-- Tab panes -->
         <div class="tab-content">
 
+            <br />
+
             <div role="tabpanel" class="tab-pane active" id="free_membership">
 
                 @include('cv._free_membership_table')

@@ -1,4 +1,4 @@
-<table class="table table-hover table-striped">
+<table class="table table-hover table-striped datatable">
     <thead>
     <tr>
         @foreach($bank_entries[0]->lead_details as $detail)
