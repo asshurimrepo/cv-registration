@@ -1,5 +1,23 @@
 @extends('master')
 
+
+@section('foot')
+    <script>
+
+        (function(){
+
+            $(".check_all").change(function(){
+
+                $("form tbody input[type='checkbox']").prop('checked', $(this).prop('checked') );
+
+            });
+
+        })();
+
+    </script>
+@stop
+
+
 @section('content')
 
 

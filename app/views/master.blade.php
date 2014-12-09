@@ -6,7 +6,7 @@
     {{ HTML::style('bootstrap/css/bootstrap.min.css') }}
     {{ HTML::style('//cdn.datatables.net/1.10.4/css/jquery.dataTables.css') }}
     {{ HTML::style('https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/bootstrap/3/dataTables.bootstrap.css') }}
-
+    {{ HTML::style('font-awesome/css/font-awesome.min.css') }}
 
     @yield('head')
 
@@ -40,7 +40,9 @@
 
     (function(){
 
-        $('.datatable').DataTable();
+        $('.datatable').DataTable({
+            "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0 ] }  ]
+        });
 
     })();
 

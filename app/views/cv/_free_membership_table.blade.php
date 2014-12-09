@@ -1,15 +1,22 @@
+{{ Form::open() }}
+
 <table class="table table-hover table-striped datatable">
     <thead>
-    <tr>
-        @foreach($free_entries[0]->lead_details as $detail)
-            <th>{{ $detail->field_name }}</th>
-        @endforeach
-    </tr>
+
+        <tr>
+                <th>{{ Form::checkbox(null,null,null,['class'=>'check_all']) }}</th>
+
+                @foreach($free_entries[0]->lead_details as $detail)
+                    <th>{{ $detail->field_name }}</th>
+                @endforeach
+        </tr>
+
     </thead>
 
     <tbody>
     @foreach($free_entries as $entry)
         <tr>
+            <th>{{ Form::checkbox(null,null,null,[]) }} <a target="_parent" href="{{ WPOptions::fetch()->siteurl."/wp-admin/admin.php?page=gf_entries&view=entry&id={$entry->form_id}&lid={$entry->lead_id}&filter=&paged=1&pos=0" }}" title="View Entry"><i class="fa fa-eye"></i></a></th>
 
             @foreach($entry->lead_details as $detail)
 
@@ -25,3 +32,4 @@
     @endforeach
     </tbody>
 </table>
+{{ Form::close() }}
