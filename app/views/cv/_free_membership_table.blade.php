@@ -16,7 +16,7 @@
     <tbody>
     @foreach($free_entries as $entry)
         <tr>
-            <th>{{--{{ Form::checkbox(null,null,null,[]) }}--}} <a target="_parent" href="{{ WPOptions::fetch()->siteurl."/wp-admin/admin.php?page=gf_entries&view=entry&id={$entry->form_id}&lid={$entry->lead_id}&filter=&paged=1&pos=0" }}" title="View Entry"><i class="fa fa-eye"></i></a></th>
+            <th>{{--{{ Form::checkbox(null,null,null,[]) }}--}} <a data-toggle="tooltip" target="_parent" href="{{ WPOptions::fetch()->siteurl."/wp-admin/admin.php?page=gf_entries&view=entry&id={$entry->form_id}&lid={$entry->lead_id}&filter=&paged=1&pos=0" }}" title="View Entry"><i class="fa fa-eye"></i></a></th>
 
             @foreach($entry->lead_details as $detail)
 

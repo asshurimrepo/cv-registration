@@ -44,6 +44,8 @@
             "aoColumnDefs": [ { "bSortable": false, "aTargets": [ 0 ] }  ]
         });
 
+        $('[data-toggle="tooltip"]').tooltip();
+
     })();
 
 </script>
