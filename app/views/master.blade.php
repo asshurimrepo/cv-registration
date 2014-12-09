@@ -13,6 +13,7 @@
     <style>
         body{
             padding-top: 10px;
+            padding-bottom: 10px;
         }
         body, table{
             font-size: 14px !important;
