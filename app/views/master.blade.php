@@ -19,7 +19,7 @@
             font-size: 14px !important;
         }
         .tab-pane{
-            min-height: 300px;
+            min-height: 300px !important;
         }
     </style>
 
